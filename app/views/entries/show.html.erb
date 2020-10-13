@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @entry.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @entry.body %>
+</p>
+
+<p>
+  <strong>Likes:</strong>
+  <%= @entry.likes %>
+</p>
+
+<p>
+  <strong>Scary votes:</strong>
+  <%= @entry.scary_votes %>
+</p>
+
+<p>
+  <strong>Funny votes:</strong>
+  <%= @entry.funny_votes %>
+</p>
+
+<%= link_to 'Edit', edit_entry_path(@entry) %> |
+<%= link_to 'Back', entries_path %>
